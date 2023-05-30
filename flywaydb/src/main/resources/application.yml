@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/my_database
+    username: postgres
+    password: root
+  flyway:
+    locations: "classpath:db/migration"
+
+flyway:
+  validate-on-migrate: false
+  encoding: UTF8MB4
+  out-of-order: true
