@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/my_database
-    username: postgres
-    password: root
+    url: jdbc:postgresql://34.172.161.190:5432/my_database
+    username: sd-dev
+    password: Tv(=<]]r<HQP0J?]
   flyway:
     locations: "classpath:db/migration"
 
