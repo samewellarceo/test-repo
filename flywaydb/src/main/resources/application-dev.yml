@@ -1,0 +1,19 @@
+flyway:
+  schemas: development
+  locations: classpath:db/migration/dev
+
+jpa:
+  hibernate:
+    ddl-auto: validate
+  show-sql: true
+  properties:
+#    javax:
+#      persistence:
+#        schema-generation:
+#          scripts:
+#            action: validated
+#            create-target: schema/account.sql
+#            create-source: metadata
+    hibernate:
+      format_sql: true
+      default_schema: development

@@ -1,0 +1,19 @@
+flyway:
+  schemas: production
+  locations: classpath:db/migration/prod
+
+jpa:
+  hibernate:
+    ddl-auto: validate
+  show-sql: true
+  properties:
+    #    javax:
+    #      persistence:
+    #        schema-generation:
+    #          scripts:
+    #            action: validated
+    #            create-target: schema/account.sql
+    #            create-source: metadata
+    hibernate:
+      format_sql: true
+      default_schema: production
